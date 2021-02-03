@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/stars.css';
 
 
 export default class Stars extends React.Component {
@@ -96,13 +96,12 @@ export default class Stars extends React.Component {
     render() {
 
       return (
-        <>
-
-        <div id="starfield" className="starfield" onMouseDown={(ev) => this.handleMouseDown(ev)} onMouseMove={(ev) => this.handleMouseMove(ev)} >
-          {this.renderStarField()}
+        <div className="starfield-container">
+          <button onClick={(ev) => this.handleButtonClick(ev)}>Reset</button>
+          <div id="starfield" className="starfield" onMouseDown={(ev) => this.handleMouseDown(ev)} onMouseMove={(ev) => this.handleMouseMove(ev)} >
+            {this.renderStarField()}
+          </div>
         </div>
-        <button onClick={(ev) => this.handleButtonClick(ev)}>Reset</button>
-        </>
       )
     }
     

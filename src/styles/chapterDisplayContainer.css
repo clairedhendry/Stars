@@ -1,0 +1,9 @@
+.main-container {
+    display: flex;
+    height: 100%;
+}
+
+.chapter-display-container {
+    height: 100%;
+    width: 100%;
+}

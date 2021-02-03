@@ -1,0 +1,10 @@
+.chapter-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.chapter-nav > a {
+    margin: 10px 0;
+}
