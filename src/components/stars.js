@@ -97,10 +97,12 @@ export default class Stars extends React.Component {
 
       return (
         <div className="starfield-container">
-          <button onClick={(ev) => this.handleButtonClick(ev)}>Reset</button>
+          <div className="star-count">{this.state.starNumber === 1 ? <p>You've drawn 1 star!</p> : <p>You've drawn {this.state.starNumber} stars!</p>}</div>
+          <button onClick={(ev) => this.handleButtonClick(ev)}>Draw Again!</button>
           <div id="starfield" className="starfield" onMouseDown={(ev) => this.handleMouseDown(ev)} onMouseMove={(ev) => this.handleMouseMove(ev)} >
             {this.renderStarField()}
           </div>
+          
         </div>
       )
     }

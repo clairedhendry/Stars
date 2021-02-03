@@ -37,3 +37,15 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+
+  button {
+      margin-top: 25px;
+  }
+
+  .star-count {
+      text-align: center;
+  }
+
+  p {
+      color: white;
+  }

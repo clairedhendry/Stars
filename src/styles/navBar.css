@@ -2,9 +2,29 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
+    background-color: rgb(37, 31, 82);
+    box-shadow: 0 0 6px 6px rgb(37, 31, 82);
 }
 
 .chapter-nav > a {
     margin: 10px 0;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
 }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1)} 
+  }
+
+  a:hover {
+    color: rgb(252, 61, 172);
+    animation-name: pulse;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
