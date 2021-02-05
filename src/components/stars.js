@@ -40,10 +40,10 @@ export default class Stars extends React.Component {
   
     handleMouseDown = (ev) => {
 
-      let number = this.getRandomInt(5, 25);
-      let colorX = this.getRandomInt(0, 256);
+      let number = this.getRandomInt(2, 100);
+      let colorX = this.getRandomInt(100, 256);
       let colorY = this.getRandomInt(0, 256);
-      let colorZ = this.getRandomInt(0, 256);
+      let colorZ = this.getRandomInt(100, 256);
       let key = this.state.starNumber + 1;
 
       let star = this.generateStar(key, ev.clientX, ev.clientY, number, colorX, colorY, colorZ);
@@ -79,7 +79,8 @@ export default class Stars extends React.Component {
                 width: `${star.size}px`, 
                 left: `${star.x}px`,
                 top: `${star.y}px`,
-                boxShadow: `0 0 3px 3px rgb(${star.colorX}, ${star.colorY}, ${star.colorZ})`}}></div>)
+                boxShadow: `0 0 3px 3px rgb(${star.colorX}, ${star.colorY}, ${star.colorZ})`
+              }}></div>)
           })
     return starField;
     }

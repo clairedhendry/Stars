@@ -25,7 +25,7 @@ export default class ChapterDisplay extends React.Component {
     render() {
         return (
         <main className="main-container">
-        <NavBar />
+        {/* <NavBar /> */}
         <section className="chapter-display-container">
             {this.renderChapter()}
         </section>

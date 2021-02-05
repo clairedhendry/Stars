@@ -6,7 +6,7 @@
 }
 
 .starfield {
-    background-color: black;
+    cursor: pointer;
     height: 100%;
     width: 100%;
   }
